@@ -1,21 +1,28 @@
 <html>
-
-<head>
+  <head>
     
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" >
+
 <meta name="generator" content="Gridea Pro 1.1.1">
-<title></title>
-<link rel="shortcut icon" href="/favicon.ico?v=1776765409">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<title>天宫游戏库</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="/favicon.ico?v=1776765772">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title=" - Atom Feed" href="/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。" />
-<meta name="description" content="天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  <meta name="description" content="天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。">
 <link rel="canonical" href="https://tgzoo.cn/tags/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"天宫游戏库","url":"https://tgzoo.cn","description":"天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://tgzoo.cn/search?q={search_term_string}"}}</script>
 <meta property="og:title" content="天宫游戏库">
@@ -30,103 +37,134 @@
 <meta name="twitter:description" content="天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。">
 <meta name="twitter:image" content="/images/avatar.png">
 </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://tgzoo.cn">
+        <img class="avatar" src="https://tgzoo.cn/images/avatar.png?v=1776765772" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://tgzoo.cn">
+        <h1 class="site-title">天宫游戏库</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
 
-<body>
-    <div class="main">
-        <div class="main-content">
-            
-<div class="site-header">
-    <a href="/">
-        <img class="avatar" src="/images/avatar.png?v=1776765409" alt="">
-    </a>
-    <h1 class="site-title">
-        天宫游戏库
-    </h1>
-    <p class="site-description">
-        天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。
-    </p>
-    <div class="menu-container">
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
         
-        
-        <a href="/" class="menu">
+          <a href="/" class="menu purple-link">
             首页
-        </a>
+          </a>
         
+      
         
-        
-        <a href="/post" class="menu">
+          <a href="/post" class="menu purple-link">
             博客
-        </a>
+          </a>
         
+      
         
-        
-        <a href="/memos" class="menu">
+          <a href="/memos" class="menu purple-link">
             闪念
-        </a>
+          </a>
         
+      
         
-        
-        <a href="/archives" class="menu">
+          <a href="/archives" class="menu purple-link">
             归档
-        </a>
+          </a>
         
+      
         
-        
-        <a href="/tags" class="menu">
+          <a href="/tags" class="menu purple-link">
             标签
-        </a>
+          </a>
         
+      
         
-        
-        <a href="/links" class="menu">
+          <a href="/links" class="menu purple-link">
             友链
-        </a>
+          </a>
         
+      
         
-        
-        <a href="/post/about" class="menu">
+          <a href="/post/about" class="menu purple-link">
             关于
-        </a>
+          </a>
         
-        
+      
     </div>
-    <div class="social-container">
-        
-        
-        
-        
-        
-    </div>
-</div>
+  </div>
+</transition>
 
 
-            <div class="tags-container">
-                
-                <a class="tag" href="/tag/ju-qing/">剧情</a>
-                
-                <a class="tag" href="/tag/mao-xian/">冒险</a>
-                
-                <a class="tag" href="/tag/han-hua-ban/">汉化版</a>
-                
-                <a class="tag" href="/tag/slg/">SLG</a>
-                
-                <a class="tag" href="/tag/jiao-se-ban-yan/">角色扮演</a>
-                
-                <a class="tag" href="/tag/mo-ni-yang-cheng/">模拟养成</a>
-                
-            </div>
-
+        <div class="content-container">
+          
+          <div class="tags-container">
             
-<div class="site-footer">
-    Powered by Gridea Pro
-    <a class="rss" href="/atom.xml" target="_blank">
-        <i class="ri-rss-line"></i> RSS
-    </a>
-</div>
+              <a class="tag" href="/tag/ju-qing/">剧情</a>
+            
+              <a class="tag" href="/tag/mao-xian/">冒险</a>
+            
+              <a class="tag" href="/tag/han-hua-ban/">汉化版</a>
+            
+              <a class="tag" href="/tag/slg/">SLG</a>
+            
+              <a class="tag" href="/tag/jiao-se-ban-yan/">角色扮演</a>
+            
+              <a class="tag" href="/tag/mo-ni-yang-cheng/">模拟养成</a>
+            
+          </div>
 
         </div>
-    </div>
-<script>console.log("\n%c ✦ Gridea Pro v1.1.1 %c · Theme: inotes v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
-</body>
 
+        <div class="site-footer">
+  <div class="slogan">天宫游戏库是国内专业的正版游戏数字发行平台，专注于为玩家提供SLG、RPG、ADV、ACT、AVG、STG、FTG、ARPG、FPS、TPS等多类型优质游戏的收费下载服务。我们致力于打造安全、便捷、丰富的游戏资源库，让每一位玩家都能在这里找到心仪的正版游戏作品，享受纯粹的游戏乐趣。</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by Gridea Pro | <a class="rss" href="/feed.xml" target="_blank">RSS</a>
+</div>
+
+
+      </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+    </div>
+  <script>console.log("\n%c ✦ Gridea Pro v1.1.1 %c · Theme: fly v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
+</body>
 </html>
